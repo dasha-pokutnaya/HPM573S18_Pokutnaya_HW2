@@ -28,19 +28,20 @@ dictHUI3 = {'Vision': [1.00, 0.98, 0.89, 0.84, 0.75, 0.61],
             'Pain': [1.00, 0.96, 0.90, 0.77, 0.55]}
 
 # Here, we are able to define each of the scores. Within each definition, I will write the perfect health score
-# for each of the attribute.
+# for each of the attributes.
 
 def scoreHUI3(vision, hearing, speech, ambulation, dexterity, emotion, cognition, pain):
     """
-    :param vision:
-    :param hearing:
-    :param speech:
-    :param ambulation:
-    :param dexterity:
-    :param emotion:
-    :param cognition:
+    :param vision: Able to see well enough to read ordinary newsprint and recognizes a friend on the other side of the
+           street, without glasses or contact lenses
+    :param hearing: Able to hear what is said in a group conversation
+    :param speech: Able to be understood completely when speaking with strangers or friends
+    :param ambulation: Able to walk around the neighborhood without difficulty, and without walking equipment
+    :param dexterity: Full use of two hands and ten fingers
+    :param emotion: Happy and interested in life
+    :param cognition: Able to remember most things, think clearly, and solve day-to-day problems
     :param pain:
-    :return:
+    :return: Free of pain and discomfort
     """
 
 # These if not statements help Python stop the code if the values are not maintained within certain
@@ -75,7 +76,6 @@ def scoreHUI3(vision, hearing, speech, ambulation, dexterity, emotion, cognition
                               * dictHUI3['Cognition'][cognition - 1]
                               * dictHUI3['Pain'][pain - 1]) - constant
     return response
-
 
 # Or you can write the same code like this and get the same answer:
 
