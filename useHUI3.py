@@ -1,5 +1,3 @@
-# Now, we are going to be importing the datafile from HUI3 and running some analysis.
-
 import HUI3 as eq
 
 # First, we will test to make sure that our formula is running correctly. If we input the perfect score for all 8
@@ -18,4 +16,3 @@ print(eq.scoreHUI3(vision=4, hearing=4, speech=4, ambulation=2, dexterity=1, emo
 print("Score for potential patient: [4,4,6,2,1,3,4,1]")
 print(eq.scoreHUI3(vision=4, hearing=4, speech=6, ambulation=2, dexterity=1, emotion=3, cognition=4, pain=1))
 # We get an error message of "value for speech level must be contained within 1-5."
-
